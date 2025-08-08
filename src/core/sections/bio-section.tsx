@@ -45,7 +45,7 @@ export function BioSection(){
               </p>
               <p className="indent-10 text-justify">
                 Eu sou um cara bem nerd, seja pra games, desenhos animados,
-                LEGO, pokemon sáo algo que me rodeiam talbem, vamos bater um
+                LEGO, pokemon são algo que me rodeiam talbem, vamos bater um
                 papo sobre isso! Vai ser divertido
               </p>
             </Column>

@@ -12,6 +12,7 @@ import RocketSeat_ReactIMG from "@/core/assets/certifications/certificado-rockes
 import Octopus_genesisIMG from "@/core/assets/certifications/octopus.jpeg"
 import Tecpuc_tecnologoIMG from "@/core/assets/certifications/tecpuc.jpeg"
 import Udemy_zeroAMaestriaIMG from "@/core/assets/certifications/udemy.jpeg"
+import ReactNativeCertificationIMG from '@/core/assets/certifications/certificacao-react-native.png'
 import { MagnifyingGlass } from "@phosphor-icons/react"
 import Image from "next/image"
 import { useEffect, useState } from "react"
@@ -25,19 +26,24 @@ export const carouselItemList = [
     image: RocketSeat_ReactIMG,
   },
   {
+    label: "Mini curso - React Native",
+    organization: "Faculdade tecnológica Rocketseat",
+    image: ReactNativeCertificationIMG,
+  },
+  {
     label: "React do Zero a Maestria (c/ hooks, router, API, Projetos)",
     organization: "Matheus Battisti - Udemy",
     image: Udemy_zeroAMaestriaIMG,
   },
   {
-    label: "Curso Genesis - Arte tradicional & pintura digital",
-    organization: "OCTOPUS",
-    image: Octopus_genesisIMG,
-  },
-  {
     label: "Tecnólogo em Informática",
     organization: "TECPUC",
     image: Tecpuc_tecnologoIMG,
+  },
+  {
+    label: "Curso Genesis - Arte tradicional & pintura digital",
+    organization: "OCTOPUS",
+    image: Octopus_genesisIMG,
   },
 ]
 
