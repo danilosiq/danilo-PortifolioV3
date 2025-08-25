@@ -18,36 +18,33 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 import { CertificationDialog } from "./certification-dialog"
 import { Column } from "./layout"
+import { useTranslation } from "react-i18next"
 
 export const carouselItemList = [
   {
-    label: "Certificado ReactJs",
-    organization: "Faculdade tecnológica Rocketseat",
+    label: "reactJs",
     image: RocketSeat_ReactIMG,
   },
   {
-    label: "Mini curso - React Native",
-    organization: "Faculdade tecnológica Rocketseat",
+    label: "reactNative",
     image: ReactNativeCertificationIMG,
   },
   {
-    label: "React do Zero a Maestria (c/ hooks, router, API, Projetos)",
-    organization: "Matheus Battisti - Udemy",
+    label: "udemy",
     image: Udemy_zeroAMaestriaIMG,
   },
   {
-    label: "Tecnólogo em Informática",
-    organization: "TECPUC",
+    label: "tecpuc",
     image: Tecpuc_tecnologoIMG,
   },
   {
-    label: "Curso Genesis - Arte tradicional & pintura digital",
-    organization: "OCTOPUS",
+    label: "octopus",
     image: Octopus_genesisIMG,
   },
 ]
 
 export function CertificationsCarousel() {
+    const { t } = useTranslation()
   const [api, setApi] = useState<CarouselApi>()
   const [current, setCurrent] = useState(0)
 
@@ -79,8 +76,8 @@ export function CertificationsCarousel() {
                   alt={`${data.label}_image`}
                   className="w-full h-[260px] rounded-t-sm object-cover"
                 />
-                <p className="text-center text-xl font-semibold">{data.label}</p>
-                <p className="text-gray-400 text-center">{data.organization}</p>
+                <p className="text-center text-xl font-semibold">{t(`certifications.${data.label}.label`)}</p>
+                <p className="text-gray-400 text-center ">{t(`certifications.${data.label}.organization`)}</p>
 
                 <CertificationDialog
                   img={data.image}

@@ -29,7 +29,7 @@ export function CareerSection() {
             {t("careerContent")}
           </p>
           <Column>
-            <p className=" mt-6 font-bold text-xl">Principais Stacks</p>
+            <p className=" mt-6 font-bold text-xl">{t("stacksTitle")}</p>
             <div className="grid max-sm:grid-cols-1 grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-2">
               {langDevList.map((lang) => (
                 <Column
@@ -43,7 +43,7 @@ export function CareerSection() {
             </div>
           </Column>
           <Column>
-            <p className=" mt-6 font-bold text-xl">Idiomas</p>
+            <p className=" mt-6 font-bold text-xl"> {t("languages.title")}</p>
             <div className="gap-4 sm:flex-row flex-col flex">
               {langList.map((lang, i) => (
                 <Column

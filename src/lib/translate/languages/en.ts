@@ -10,6 +10,12 @@ export const en = {
     career: "Career",
     certifications: "Certifications",
     projects: "Projects",
+    lang:"Language"
+  },
+
+  bio:{
+    age:"20 years old",
+    location:"Curitiba - PR, Brazil"
   },
 
   aboutMe: {
@@ -17,7 +23,7 @@ export const en = {
     paragraph1:
       "I’m a young person who lives intensely in both the online world and the artistic universe. I’m always looking for something new to learn, whether out of curiosity or a desire to better express myself in what I do. I see myself as a calm, observant person, deeply connected with those around me.",
     paragraph2:
-      "I’m driven by hobbies, passions, and challenges. I’m always exploring new interests, while never letting go of what has motivated me from the very beginning—and inspiring those I meet along the way.",
+      "I’m driven by hobbies, passions, and challenges. I’m always exploring new interests, while never letting go of what has motivated me from the very beginning and inspiring those I meet along the way.",
   },
 
   hobbies: {
@@ -68,7 +74,7 @@ export const en = {
 
     bookwise: {
       title: "BookWise - Full stack Developer",
-      Subtitle_content: "Remote – Freelancer",
+      subtitle_content: "Remote – Freelancer",
       period: "Feb 2025 - Mar 2025",
       description:
         "Developed a book review application with authentication via Google and GitHub (NextAuth). Implemented Prisma with a Neon database and used React Query for efficient data management.",
@@ -137,7 +143,7 @@ export const en = {
     subtitle:
       "Here are some of the projects I’ve worked on. Click “View More” to see the descriptions.",
     viewMore: "View More",
-    viewDemo: "view Demo",
+    viewDemo: "View Demo",
     igniteTimer: {
       title: "Ignite Timer",
       description:
