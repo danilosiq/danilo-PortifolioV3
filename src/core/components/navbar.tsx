@@ -17,7 +17,7 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import i18n from "@/lib/translate/i18next";
+import i18n from "@/lib/translate/i18n";
 import { useState } from "react";
 
 export function Navbar() {
