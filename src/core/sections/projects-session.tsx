@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { DialogProject } from "../components/dialog-project";
 import { Column } from "../components/layout";
-import "@/lib/translate/i18next";
+import "@/lib/translate/i18n";
 
 export function ProjectsSession() {
   const { t } = useTranslation()

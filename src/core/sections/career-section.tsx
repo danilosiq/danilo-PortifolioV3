@@ -5,7 +5,7 @@ import { GrMysql } from "react-icons/gr";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiPrisma, SiTypescript } from "react-icons/si";
 import { Column } from "../components/layout";
-import "@/lib/translate/i18next";
+import "@/lib/translate/i18n";
 import { useTranslation } from "react-i18next";
 
 export function CareerSection() {
