@@ -23,7 +23,7 @@ export function SocialMediaRow() {
 
     {
       icon: <LinkedinLogo size={40} />,
-      url: "https://www.linkedin.com/in/danilo-siqueira-1a31a7234/",
+      url: "https://www.linkedin.com/in/danilo-dante-siqueira-1a31a7234/",
       hoverStyle: "hover:bg-blue-500 hover:text-white",
     },
     {
