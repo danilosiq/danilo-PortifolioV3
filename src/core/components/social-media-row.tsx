@@ -1,11 +1,14 @@
 import {
+  DownloadSimple,
   InstagramLogo,
   LinkedinLogo,
+  ReadCvLogo,
   WhatsappLogo,
 } from "@phosphor-icons/react";
 import { GithubLogo } from "@phosphor-icons/react/dist/ssr";
 import { useRouter } from "next/navigation";
 import { Row } from "./layout";
+import ResumePDF from '@/core/assets/cv.pdf'
 
 export function SocialMediaRow() {
   const router = useRouter();
@@ -31,20 +34,27 @@ export function SocialMediaRow() {
       url: "https://www.instagram.com/daniloosiq/",
       hoverStyle: "hover:bg-rose-500 hover:text-white",
     },
+     {
+      icon:<ReadCvLogo size={40}  className=""/>,
+      url:'/cv.pdf',
+      hoverStyle: "bg-slate-900 text-white hover:bg-teal-500",
+    },
   ];
 
   return (
     <Row className="gap-6">
-      {topics.map((topic,i) => (
+      {topics.map((topic, i) => (
         <a
-        key={i}
+          key={i}
           target="_blank"
           href={topic.url}
-          className={` p-1 cursor-pointer transition-all rounded-md ${topic.hoverStyle}`}
+          rel="noopener noreferrer"
+          className={` p-1  cursor-pointer transition-all rounded-md ${topic.hoverStyle}`}
         >
           {topic.icon}
         </a>
       ))}
+
     </Row>
   );
 }
