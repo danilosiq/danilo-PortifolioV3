@@ -1,6 +1,9 @@
 import "@/core/styles/tailwind-config.css";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 const geistSans = Geist({
   variable: "--font-geist-poppins",
   subsets: ["latin"],
@@ -24,6 +27,8 @@ export default function RootLayout({
         className={`${geistSans.variable} font-mono bg-background antialiased`}
       >
         {children}
+        <SpeedInsights/>
+        <Analytics/>
       </body>
     </html>
   );

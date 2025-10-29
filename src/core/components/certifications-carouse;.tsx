@@ -12,36 +12,39 @@ import RocketSeat_ReactIMG from "@/core/assets/certifications/certificado-rockes
 import Octopus_genesisIMG from "@/core/assets/certifications/octopus.jpeg"
 import Tecpuc_tecnologoIMG from "@/core/assets/certifications/tecpuc.jpeg"
 import Udemy_zeroAMaestriaIMG from "@/core/assets/certifications/udemy.jpeg"
+import ReactNativeCertificationIMG from '@/core/assets/certifications/certificacao-react-native.png'
 import { MagnifyingGlass } from "@phosphor-icons/react"
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import { CertificationDialog } from "./certification-dialog"
 import { Column } from "./layout"
+import { useTranslation } from "react-i18next"
 
 export const carouselItemList = [
   {
-    label: "Certificado ReactJs",
-    organization: "Faculdade tecnológica Rocketseat",
+    label: "reactJs",
     image: RocketSeat_ReactIMG,
   },
   {
-    label: "React do Zero a Maestria (c/ hooks, router, API, Projetos)",
-    organization: "Matheus Battisti - Udemy",
+    label: "reactNative",
+    image: ReactNativeCertificationIMG,
+  },
+  {
+    label: "udemy",
     image: Udemy_zeroAMaestriaIMG,
   },
   {
-    label: "Curso Genesis - Arte tradicional & pintura digital",
-    organization: "OCTOPUS",
-    image: Octopus_genesisIMG,
+    label: "tecpuc",
+    image: Tecpuc_tecnologoIMG,
   },
   {
-    label: "Tecnólogo em Informática",
-    organization: "TECPUC",
-    image: Tecpuc_tecnologoIMG,
+    label: "octopus",
+    image: Octopus_genesisIMG,
   },
 ]
 
 export function CertificationsCarousel() {
+    const { t } = useTranslation()
   const [api, setApi] = useState<CarouselApi>()
   const [current, setCurrent] = useState(0)
 
@@ -73,8 +76,8 @@ export function CertificationsCarousel() {
                   alt={`${data.label}_image`}
                   className="w-full h-[260px] rounded-t-sm object-cover"
                 />
-                <p className="text-center text-xl font-semibold">{data.label}</p>
-                <p className="text-gray-400 text-center">{data.organization}</p>
+                <p className="text-center text-xl font-semibold">{t(`certifications.${data.label}.label`)}</p>
+                <p className="text-gray-400 text-center ">{t(`certifications.${data.label}.organization`)}</p>
 
                 <CertificationDialog
                   img={data.image}

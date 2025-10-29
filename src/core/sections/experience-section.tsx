@@ -3,17 +3,20 @@ import { Column, Row } from "../components/layout";
 import Image from "next/image";
 import CartorioImg from "@/core/assets/cartorio.jpg";
 import IboltImg from "@/core/assets/ibolt.jpg";
+import { useTranslation } from "react-i18next";
+
 export function ExperienceSection() {
+  const { t } = useTranslation()
   return (
     <Column className="sm:max-w-[1090px]  w-full">
-      <p className="sm:text-5xl max-sm:text-4xl font-bold pb-4">Experiencias</p>
+      <p className="sm:text-5xl max-sm:text-4xl font-bold pb-4">{t(`experience.title`)}</p>
 
       {experienceList.map((data, i) => (
         <div
           key={i}
           className="min-h-[150px] h-full flex max-md:flex-col border-b border-slate-400 w-full gap-4 mb-4 pb-4 "
         >
-          <div className="w-[300px] md:w-[500px]  h-full relative">
+          <div className="w-full md:w-[500px]  h-full relative">
             {data.video && (
               <video
                 src={data.video}
@@ -36,17 +39,17 @@ export function ExperienceSection() {
           </div>
           <Column className=" w-full md:w-[50%] justify-between">
             <Column>
-              <p className=" rounded-t-sm font-bold">{data.title}</p>
+              <p className=" rounded-t-sm font-bold">{t(`experience.${data.key}.title`)}</p>
               <label htmlFor="" className="text-sm">
-                Local e Tipo de contração:
-                <span className="text-gray-500 text-sm"> {data.local}</span>
+                {t(`experience.subtitle`)}
+                <span className="text-gray-500 text-sm">{t(`experience.${data.key}.subtitle_content`)} </span>
               </label>
               <label htmlFor="" className="text-sm">
-                Período:
-                <span className="text-gray-500 text-sm"> {data.date}</span>
+                 {t(`experience.period`)}
+                <span className="text-gray-500 text-sm"> {t(`experience.${data.key}.period`)}</span>
               </label>
               <Column className="my-5">
-                <p className="text-justify">{data.description}</p>
+                <p className="text-justify"> {t(`experience.${data.key}.description`)}</p>
               </Column>
             </Column>
             {data.demo && (
@@ -55,7 +58,7 @@ export function ExperienceSection() {
                 target="_blank"
                 className="w-full bg-amber-100 border items-center gap-4 cursor ponter flex justify-center  rounded-md"
               >
-                <p>Acessar Demo</p> <ArrowRight size={20} />
+                <p>{t(`experience.button_text`)}</p> <ArrowRight size={20} />
               </a>
             )}
           </Column>
@@ -67,39 +70,23 @@ export function ExperienceSection() {
 
 const experienceList = [
   {
-    title: "Ibolt - Dev Front End",
-    date: "Mai 2025 - atualmente",
+    key: "ibolt",
     image: IboltImg,
-    local: "Curitiba (Estagio presencial)",
-    description:
-      "Desenvolvimento de interfaces front-end com React, TypeScript, Next.js e Tailwind CSS, com foco em UX/UI. Atuação em equipe com metodologias ágeis (SCRUM), gerenciamento de tarefas via Trello e integração com APIs REST. Utilização de Figma para criação de layouts responsivos e aprendizado de aplicações como o FileMaker, tecnologia adotada pela empresa antes de entrar para a equipe.",
   },
 
   {
-    title: "Book Wise - Dev full stack",
-    date: "Feb 2025 - feb 2025",
+    key: "bookwise",
     demo: "https://book-wise-coral-kappa.vercel.app/",
     video: "/videos/bookWise-video.mp4",
-    local: "Remoto - Freelancer",
-    description:
-      "Aplicação de reviews de livros com autenticação via Google e GitHub (NextAuth). Utilizei Prisma com banco de dados Neon e React Query para gerenciamento eficiente de dados.",
   },
   {
-    title: "Nau! Saas - Dev front end Jr",
-    date: "Jan 2024 - out 2024",
+    key: "nau",
     demo: "https://www.naudelivery.com.br/",
     video: "/videos/nau-video.mp4",
-    local: "Remoto - Freelancer",
-    description:
-      "Desenvolvi e integrei interfaces de usuário para o projeto “Nau!”, com foco no desenvolvimento front-end para plataformas web e mobile, realizando um redesign e integração com o back end usando consumação de API RESTFUL. Colaborei com a equipe via Slack, metodologias ágeis como SCRUM e utilizei designs do Figma.",
   },
   {
-    title: "Auxiliar de cartório",
-    date: "Jun 2023 - jan 2024",
-    local:
-      "Cartório Distrital da Barreirinha - Tabelionato de Notas e Registro Civil - CLT presencial",
+    key: "Notary",
+    
     image: CartorioImg,
-    description:
-      "Prestei assistência a clientes, aprimorando minhas habilidades de comunicação e melhorando a capacidade de interagir de forma eficaz com diferentes perfis de pessoas e saber lidar em ambientes de pressão que exige agilidade nas tarefas.",
   },
 ];

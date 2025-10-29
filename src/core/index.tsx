@@ -12,8 +12,10 @@ import { CertificationsSection } from "./sections/certifications-section";
 import { ExperienceSection } from "./sections/experience-section";
 import { MicroCertificationsSection } from "./sections/micro-certifications-section";
 import { ProjectsSession } from "./sections/projects-session";
+import { useTranslation } from "react-i18next";
 
 export function HomePage() {
+   const { t } = useTranslation()
   return (
     <Column>
       <Navbar />
@@ -30,8 +32,8 @@ export function HomePage() {
           />
           <Column>
             <p className="text-6xl font-bold">Danilo Dante Siqueira</p>
-            <p>20 anos</p>
-            <p>Curitiba - PR</p>
+            <p>{t("bio.age")}</p>
+            <p>{t("bio.location")}</p>
             <SocialMediaRow />
           </Column>
         </section>
