@@ -1,7 +1,7 @@
-import MyhobbiesImage from "@/core/assets/honnies-danilo.png";
+import MyhobbiesImage from "@/core/assets/hobby.png";
 import Image from "next/image";
-import { Column } from "../components/layout";
 import { useTranslation } from "react-i18next";
+import { Column } from "../components/layout";
 
 
 
