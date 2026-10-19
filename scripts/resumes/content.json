@@ -1,0 +1,209 @@
+{
+  "PT-BR": {
+    "language": "pt-BR",
+    "role": "Desenvolvedor Full Stack Júnior",
+    "location": "Curitiba, PR, Brasil",
+    "summaryHeading": "RESUMO PROFISSIONAL",
+    "summary": "Desenvolvedor Full Stack com experiência em aplicações web e mobile usando React, Next.js, React Native, TypeScript e Node.js. Atuação em comunicação em tempo real, integração com APIs REST e testes automatizados. Contribui para soluções de mensageria e notificações a partir de fluxos de usuário, visão de produto e design, em colaboração com equipes técnicas.",
+    "skillsHeading": "COMPETÊNCIAS TÉCNICAS",
+    "skills": [
+      [
+        "Front-end",
+        "React, Next.js, React Native, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Expo, React Query, Radix UI, Zod."
+      ],
+      [
+        "Back-end e integração",
+        "Node.js, Prisma, APIs REST, WebSocket, HTTP, FileMaker."
+      ],
+      [
+        "Qualidade e entrega",
+        "Testes unitários e E2E, Git, GitHub, GitFlow; contato com AWS e Docker."
+      ],
+      [
+        "Produto e colaboração",
+        "Figma, UX/UI, Design Systems, Storybook, Jira, Trello, Shortcut, Slack, Scrum, Kanban, Codex e Spec-Driven Development."
+      ]
+    ],
+    "experienceHeading": "EXPERIÊNCIA PROFISSIONAL",
+    "jobs": [
+      {
+        "company": "Exban",
+        "role": "Desenvolvedor Full Stack Júnior | CLT",
+        "details": "Curitiba, PR | fev 2026 - atual",
+        "bullets": [
+          "Viabilizei a comunicação em tempo real na plataforma interna com funcionalidades de chat em React, TypeScript, Node.js, Prisma e WebSocket.",
+          "Contribuí para a concepção de soluções de mensageria e notificações no aplicativo, estruturando fluxos de usuário, visão de produto e design no Figma junto à equipe técnica.",
+          "Implementei testes automatizados unitários e E2E para verificar comportamentos da aplicação e apoiar a confiabilidade das entregas.",
+          "Incorporei Codex e Spec-Driven Development ao desenvolvimento para apoiar entregas com IA a partir de especificações. Colaborei com produto e tecnologia via Jira, Scrum e Kanban."
+        ]
+      },
+      {
+        "company": "Ibolt",
+        "role": "Desenvolvedor Front-end | Estágio",
+        "details": "Curitiba, PR | mai 2025 - jan 2026",
+        "bullets": [
+          "Atendi a necessidades de uso em web e mobile com interfaces responsivas em React, Next.js, TypeScript e Tailwind CSS e aplicativos em React Native e Expo.",
+          "Integrei lógica de negócio com FileMaker para apoiar a otimização de processos internos, colaborando em equipe ágil com Git, GitHub e GitFlow."
+        ]
+      },
+      {
+        "company": "Nau! SaaS",
+        "role": "Desenvolvedor Front-end",
+        "details": "Remoto | jan 2024 - jan 2025",
+        "bullets": [
+          "Conectei interfaces web e mobile aos serviços de back-end por APIs REST, com React Native, Expo, Next.js e TypeScript.",
+          "Redesenhei interfaces a partir do Figma e apliquei Tailwind CSS para atender diferentes telas; alinhei demandas com a equipe via Shortcut e Slack."
+        ]
+      }
+    ],
+    "educationHeading": "FORMAÇÃO ACADÊMICA",
+    "education": "Bacharelado em Engenharia de Software | Centro Universitário UniOpet",
+    "educationDetails": "jan 2023 - em andamento",
+    "certificationsHeading": "CERTIFICAÇÕES E CURSOS",
+    "certifications": [
+      "React | Rocketseat | 35h | fev 2026",
+      "React Native | Rocketseat | 5h | ago 2025",
+      "Microcertificações | Rocketseat | 33h | 2025: Hooks, integração Front-end/Back-end, Next.js, HTTP e Performance, Design System e Node.js."
+    ],
+    "languagesHeading": "IDIOMAS",
+    "languages": "Português: nativo | Inglês: B1 (intermediário)"
+  },
+  "ES": {
+    "language": "es",
+    "role": "Desarrollador Full Stack Júnior",
+    "location": "Curitiba, PR, Brasil",
+    "summaryHeading": "PERFIL PROFESIONAL",
+    "summary": "Desarrollador Full Stack con experiencia en aplicaciones web y móviles con React, Next.js, React Native, TypeScript y Node.js. Trabajo en comunicación en tiempo real, integración con APIs REST y pruebas automatizadas. Contribuyo a soluciones de mensajería y notificaciones desde los flujos de usuario, la visión de producto y el diseño, en colaboración con equipos técnicos.",
+    "skillsHeading": "COMPETENCIAS TÉCNICAS",
+    "skills": [
+      [
+        "Front-end",
+        "React, Next.js, React Native, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Expo, React Query, Radix UI, Zod."
+      ],
+      [
+        "Back-end e integración",
+        "Node.js, Prisma, APIs REST, WebSocket, HTTP, FileMaker."
+      ],
+      [
+        "Calidad y entrega",
+        "Pruebas unitarias y E2E, Git, GitHub, GitFlow; familiaridad con AWS y Docker."
+      ],
+      [
+        "Producto y colaboración",
+        "Figma, UX/UI, Design Systems, Storybook, Jira, Trello, Shortcut, Slack, Scrum, Kanban, Codex y Spec-Driven Development."
+      ]
+    ],
+    "experienceHeading": "EXPERIENCIA PROFESIONAL",
+    "jobs": [
+      {
+        "company": "Exban",
+        "role": "Desarrollador Full Stack Júnior | Contrato laboral CLT (Brasil)",
+        "details": "Curitiba, Brasil | feb 2026 - actualidad",
+        "bullets": [
+          "Habilité la comunicación en tiempo real en la plataforma interna mediante funciones de chat con React, TypeScript, Node.js, Prisma y WebSocket.",
+          "Contribuí a la concepción de soluciones de mensajería y notificaciones en la aplicación, definiendo flujos de usuario, visión de producto y diseño en Figma junto al equipo técnico.",
+          "Implementé pruebas unitarias y E2E automatizadas para verificar el comportamiento de la aplicación y respaldar la fiabilidad de las entregas.",
+          "Incorporé Codex y Spec-Driven Development para apoyar entregas con IA basadas en especificaciones. Colaboré con producto y tecnología mediante Jira, Scrum y Kanban."
+        ]
+      },
+      {
+        "company": "Ibolt",
+        "role": "Desarrollador Front-end | Prácticas profesionales",
+        "details": "Curitiba, Brasil | may 2025 - ene 2026",
+        "bullets": [
+          "Respondí a necesidades de uso en web y móvil con interfaces adaptables en React, Next.js, TypeScript y Tailwind CSS y aplicaciones en React Native y Expo.",
+          "Integré lógica de negocio con FileMaker para apoyar la optimización de procesos internos, colaborando en un equipo ágil con Git, GitHub y GitFlow."
+        ]
+      },
+      {
+        "company": "Nau! SaaS",
+        "role": "Desarrollador Front-end",
+        "details": "Remoto | ene 2024 - ene 2025",
+        "bullets": [
+          "Conecté interfaces web y móviles con los servicios de back-end mediante APIs REST, utilizando React Native, Expo, Next.js y TypeScript.",
+          "Rediseñé interfaces a partir de Figma y apliqué Tailwind CSS para distintos tamaños de pantalla; coordiné tareas con el equipo mediante Shortcut y Slack."
+        ]
+      }
+    ],
+    "educationHeading": "FORMACIÓN ACADÉMICA",
+    "education": "Grado en Ingeniería de Software (Bacharelado, Brasil) | Centro Universitário UniOpet",
+    "educationDetails": "ene 2023 - en curso",
+    "certificationsHeading": "CERTIFICACIONES Y CURSOS",
+    "certifications": [
+      "React | Rocketseat | 35 h | feb 2026",
+      "React Native | Rocketseat | 5 h | ago 2025",
+      "Microcertificaciones | Rocketseat | 33 h | 2025: Hooks, integración Front-end/Back-end, Next.js, HTTP y rendimiento, Design System y Node.js."
+    ],
+    "languagesHeading": "IDIOMAS",
+    "languages": "Portugués: nativo | Inglés: B1 (intermedio)"
+  },
+  "EN": {
+    "language": "en",
+    "role": "Junior Full Stack Developer",
+    "location": "Curitiba, PR, Brazil",
+    "summaryHeading": "PROFESSIONAL SUMMARY",
+    "summary": "Full Stack Developer with experience building web and mobile applications using React, Next.js, React Native, TypeScript, and Node.js. Works on real-time communication, REST API integration, and automated testing. Contributes to messaging and in-app notification solutions through user flows, product thinking, and design in collaboration with technical teams.",
+    "skillsHeading": "TECHNICAL SKILLS",
+    "skills": [
+      [
+        "Front-end",
+        "React, Next.js, React Native, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Expo, React Query, Radix UI, Zod."
+      ],
+      [
+        "Back-end and integration",
+        "Node.js, Prisma, REST APIs, WebSocket, HTTP, FileMaker."
+      ],
+      [
+        "Quality and delivery",
+        "Unit and E2E testing, Git, GitHub, GitFlow; exposure to AWS and Docker."
+      ],
+      [
+        "Product and collaboration",
+        "Figma, UX/UI, Design Systems, Storybook, Jira, Trello, Shortcut, Slack, Scrum, Kanban, Codex, and Spec-Driven Development."
+      ]
+    ],
+    "experienceHeading": "PROFESSIONAL EXPERIENCE",
+    "jobs": [
+      {
+        "company": "Exban",
+        "role": "Junior Full Stack Developer | CLT employment (Brazil)",
+        "details": "Curitiba, Brazil | Feb 2026 - Present",
+        "bullets": [
+          "Enabled real-time communication on the internal platform by developing chat features with React, TypeScript, Node.js, Prisma, and WebSocket.",
+          "Contributed to the design of messaging and in-app notification solutions, defining user flows, product requirements, and Figma designs with the technical team.",
+          "Implemented automated unit and E2E tests to verify application behavior and support reliable releases.",
+          "Incorporated Codex and Spec-Driven Development to support AI-assisted delivery based on specifications. Collaborated with product and engineering through Jira, Scrum, and Kanban."
+        ]
+      },
+      {
+        "company": "Ibolt",
+        "role": "Front-end Developer Intern",
+        "details": "Curitiba, Brazil | May 2025 - Jan 2026",
+        "bullets": [
+          "Addressed web and mobile usage needs through responsive interfaces with React, Next.js, TypeScript, and Tailwind CSS and mobile applications with React Native and Expo.",
+          "Integrated business logic with FileMaker to support internal process optimization, collaborating in an agile team using Git, GitHub, and GitFlow."
+        ]
+      },
+      {
+        "company": "Nau! SaaS",
+        "role": "Front-end Developer",
+        "details": "Remote | Jan 2024 - Jan 2025",
+        "bullets": [
+          "Connected web and mobile interfaces to back-end services through REST APIs using React Native, Expo, Next.js, and TypeScript.",
+          "Redesigned interfaces from Figma and applied Tailwind CSS to support different screen sizes; coordinated tasks with the team through Shortcut and Slack."
+        ]
+      }
+    ],
+    "educationHeading": "EDUCATION",
+    "education": "Bachelor's Degree in Software Engineering (in progress) | Centro Universitário UniOpet",
+    "educationDetails": "Jan 2023 - Ongoing",
+    "certificationsHeading": "CERTIFICATIONS AND COURSES",
+    "certifications": [
+      "React | Rocketseat | 35 hours | Feb 2026",
+      "React Native | Rocketseat | 5 hours | Aug 2025",
+      "Microcertifications | Rocketseat | 33 hours | 2025: Hooks, Front-end/Back-end integration, Next.js, HTTP and Performance, Design System, and Node.js."
+    ],
+    "languagesHeading": "LANGUAGES",
+    "languages": "Portuguese: Native | English: B1 (Intermediate)"
+  }
+}
