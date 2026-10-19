@@ -1,7 +1,7 @@
 {
   "PT-BR": {
     "language": "pt-BR",
-    "role": "Desenvolvedor Full Stack Júnior",
+    "role": "Desenvolvedor Full Stack",
     "location": "Curitiba, PR, Brasil",
     "summaryHeading": "RESUMO PROFISSIONAL",
     "summary": "Desenvolvedor Full Stack com experiência em aplicações web e mobile usando React, Next.js, React Native, TypeScript e Node.js. Atuação em comunicação em tempo real, integração com APIs REST e testes automatizados. Contribui para soluções de mensageria e notificações a partir de fluxos de usuário, visão de produto e design, em colaboração com equipes técnicas.",
@@ -28,7 +28,7 @@
     "jobs": [
       {
         "company": "Exban",
-        "role": "Desenvolvedor Full Stack Júnior | CLT",
+        "role": "Desenvolvedor Full Stack | CLT",
         "details": "Curitiba, PR | fev 2026 - atual",
         "bullets": [
           "Viabilizei a comunicação em tempo real na plataforma interna com funcionalidades de chat em React, TypeScript, Node.js, Prisma e WebSocket.",
@@ -70,7 +70,7 @@
   },
   "ES": {
     "language": "es",
-    "role": "Desarrollador Full Stack Júnior",
+    "role": "Desarrollador Full Stack",
     "location": "Curitiba, PR, Brasil",
     "summaryHeading": "PERFIL PROFESIONAL",
     "summary": "Desarrollador Full Stack con experiencia en aplicaciones web y móviles con React, Next.js, React Native, TypeScript y Node.js. Trabajo en comunicación en tiempo real, integración con APIs REST y pruebas automatizadas. Contribuyo a soluciones de mensajería y notificaciones desde los flujos de usuario, la visión de producto y el diseño, en colaboración con equipos técnicos.",
@@ -97,7 +97,7 @@
     "jobs": [
       {
         "company": "Exban",
-        "role": "Desarrollador Full Stack Júnior | Contrato laboral CLT (Brasil)",
+        "role": "Desarrollador Full Stack | Contrato laboral CLT (Brasil)",
         "details": "Curitiba, Brasil | feb 2026 - actualidad",
         "bullets": [
           "Habilité la comunicación en tiempo real en la plataforma interna mediante funciones de chat con React, TypeScript, Node.js, Prisma y WebSocket.",
@@ -139,7 +139,7 @@
   },
   "EN": {
     "language": "en",
-    "role": "Junior Full Stack Developer",
+    "role": "Full Stack Developer",
     "location": "Curitiba, PR, Brazil",
     "summaryHeading": "PROFESSIONAL SUMMARY",
     "summary": "Full Stack Developer with experience building web and mobile applications using React, Next.js, React Native, TypeScript, and Node.js. Works on real-time communication, REST API integration, and automated testing. Contributes to messaging and in-app notification solutions through user flows, product thinking, and design in collaboration with technical teams.",
@@ -166,7 +166,7 @@
     "jobs": [
       {
         "company": "Exban",
-        "role": "Junior Full Stack Developer | CLT employment (Brazil)",
+        "role": "Full Stack Developer | CLT employment (Brazil)",
         "details": "Curitiba, Brazil | Feb 2026 - Present",
         "bullets": [
           "Enabled real-time communication on the internal platform by developing chat features with React, TypeScript, Node.js, Prisma, and WebSocket.",

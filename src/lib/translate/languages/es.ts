@@ -38,7 +38,7 @@ export const es: typeof en = {
     title: "Experiencia", subtitle: "Ubicación y tipo de contratación:",
     period: "Periodo:", button_text: "Ver demo",
     exban: {
-      title: "Exban - Desarrollador Full Stack Júnior",
+      title: "Exban - Desarrollador Full Stack",
       subtitle_content: "Curitiba, Brasil - Contrato laboral CLT",
       period: "Feb 2026 - actualidad",
       description: "Habilité la comunicación en tiempo real en la plataforma interna mediante funciones de chat con React, TypeScript, Node.js, Prisma y WebSocket. Contribuí a la concepción de soluciones de mensajería y notificaciones en la aplicación, definiendo flujos de usuario, visión de producto y diseño en Figma junto al equipo técnico. Implementé pruebas unitarias y E2E automatizadas para verificar el comportamiento de la aplicación y respaldar la fiabilidad de las entregas. Incorporé Codex y Spec-Driven Development para apoyar entregas con IA basadas en especificaciones. Colaboré con producto y tecnología mediante Jira, Scrum y Kanban.",

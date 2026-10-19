@@ -67,7 +67,7 @@ export const ptBR = {
     button_text: "Ver demo",
 
     exban: {
-      title: "Exban - Desenvolvedor Full Stack Júnior",
+      title: "Exban - Desenvolvedor Full Stack",
       subtitle_content: "Curitiba, PR - CLT",
       period: "Fev 2026 - atualmente",
       description: "Viabilizei a comunicação em tempo real na plataforma interna com funcionalidades de chat em React, TypeScript, Node.js, Prisma e WebSocket. Contribuí para a concepção de soluções de mensageria e notificações no aplicativo, estruturando fluxos de usuário, visão de produto e design no Figma junto à equipe técnica. Implementei testes automatizados unitários e E2E para verificar comportamentos da aplicação e apoiar a confiabilidade das entregas. Incorporei Codex e Spec-Driven Development ao desenvolvimento para apoiar entregas com IA a partir de especificações. Colaborei com produto e tecnologia via Jira, Scrum e Kanban.",

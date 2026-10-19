@@ -69,7 +69,7 @@ export const en = {
     button_text: "View Demo",
 
     exban: {
-      title: "Exban - Junior Full Stack Developer",
+      title: "Exban - Full Stack Developer",
       subtitle_content: "Curitiba, Brazil - CLT employment",
       period: "Feb 2026 - Present",
       description: "Enabled real-time communication on the internal platform by developing chat features with React, TypeScript, Node.js, Prisma, and WebSocket. Contributed to the design of messaging and in-app notification solutions, defining user flows, product requirements, and Figma designs with the technical team. Implemented automated unit and E2E tests to verify application behavior and support reliable releases. Incorporated Codex and Spec-Driven Development to support AI-assisted delivery based on specifications. Collaborated with product and engineering through Jira, Scrum, and Kanban.",
