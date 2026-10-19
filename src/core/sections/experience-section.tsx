@@ -3,6 +3,7 @@ import { Column } from "../components/layout";
 import Image from "next/image";
 import CartorioImg from "@/core/assets/cartorio.jpg";
 import IboltImg from "@/core/assets/ibolt.jpg";
+import ExbanImg from "@/core/assets/exban.png";
 import { useTranslation } from "react-i18next";
 
 export function ExperienceSection() {
@@ -17,11 +18,6 @@ export function ExperienceSection() {
           className="min-h-[150px] h-full flex max-md:flex-col border-b border-slate-400 w-full gap-4 mb-4 pb-4 "
         >
           <div className="w-full md:w-[500px]  h-full relative">
-            {!data.image && !data.video && (
-              <div className="flex h-[260px] w-full items-center justify-center rounded-sm border border-slate-300 bg-amber-50">
-                <span className="text-5xl font-bold tracking-tight">Exban</span>
-              </div>
-            )}
             {data.video && (
               <video
                 src={data.video}
@@ -32,12 +28,14 @@ export function ExperienceSection() {
               />
             )}
             {data.image && (
-              <div className="w-full h-[260px] ">
+              <div className="relative w-full h-[260px]">
                 <Image
                   src={data.image}
-                  alt="Work Experience Image"
+                  alt={t(`experience.${data.key}.title`)}
                   fill
+                  sizes="(max-width: 768px) 100vw, 500px"
                   className="object-cover rounded-sm"
+                  style={{ objectPosition: data.key === "exban" ? "center 30%" : "center" }}
                 />
               </div>
             )}
@@ -76,6 +74,7 @@ export function ExperienceSection() {
 const experienceList = [
   {
     key: "exban",
+    image: ExbanImg,
   },
   {
     key: "ibolt",
