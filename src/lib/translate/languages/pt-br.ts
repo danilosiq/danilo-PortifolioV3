@@ -1,8 +1,13 @@
-import { Certificate, Paragraph } from "@phosphor-icons/react";
-import { Description } from "@radix-ui/react-dialog";
-import { title } from "process";
-
 export const ptBR = {
+  ui: { close: "Fechar", previous: "Anterior", next: "Próximo", openMenu: "Abrir menu" },
+  resume: {
+    open: "Ver currículo",
+    selectLanguage: "Selecione o idioma",
+    close: "Fechar",
+    description: "Escolha um dos três cards para abrir o currículo em PDF em uma nova aba.",
+    viewPdf: "Ver PDF",
+    newTab: "nova aba",
+  },
   //navbar
   navbar: {
     home: "Inicio",
@@ -13,7 +18,7 @@ export const ptBR = {
     lang: "Idioma",
   },
   bio: {
-    age: "20 anos",
+    age: "{{age}} anos",
     location: "Curitiba - PR, Brasil",
   },
   aboutMe: {
@@ -36,8 +41,7 @@ export const ptBR = {
 
   //career
   careerTitle: "Carreira",
-  careerContent:
-    "Desenvolvedor Front-End com sólida experiência na criação de aplicações web responsivas e intuitivas. Especialista na integração entre front-end e back-end, com domínio no consumo de APIs e colaboração com equipes multidisciplinares. Atua com metodologias ágeis, aplicando boas práticas de estruturação de código e conceitos de engenharia de software.",
+  careerContent: "Desenvolvedor Full Stack com experiência em aplicações web e mobile usando React, Next.js, React Native, TypeScript e Node.js. Atuação em comunicação em tempo real, integração com APIs REST e testes automatizados. Contribui para soluções de mensageria e notificações a partir de fluxos de usuário, visão de produto e design, em colaboração com equipes técnicas.",
 
   //stacks
   stacksTitle: "Principais Stacks",
@@ -47,7 +51,7 @@ export const ptBR = {
     title: "Idiomas",
     english: {
       label: "Ingles",
-      level: "Nivel B2 - intermediario/avançado",
+      level: "Nível B1 - intermediário",
     },
     portuguese: {
       label: "Portugues BR",
@@ -62,17 +66,23 @@ export const ptBR = {
     period: "Período:",
     button_text: "Ver demo",
 
+    exban: {
+      title: "Exban - Desenvolvedor Full Stack Júnior",
+      subtitle_content: "Curitiba, PR - CLT",
+      period: "Fev 2026 - atualmente",
+      description: "Viabilizei a comunicação em tempo real na plataforma interna com funcionalidades de chat em React, TypeScript, Node.js, Prisma e WebSocket. Contribuí para a concepção de soluções de mensageria e notificações no aplicativo, estruturando fluxos de usuário, visão de produto e design no Figma junto à equipe técnica. Implementei testes automatizados unitários e E2E para verificar comportamentos da aplicação e apoiar a confiabilidade das entregas. Incorporei Codex e Spec-Driven Development ao desenvolvimento para apoiar entregas com IA a partir de especificações. Colaborei com produto e tecnologia via Jira, Scrum e Kanban.",
+    },
+
     ibolt: {
       title: "Ibolt - Dev Front End",
       subtitle_content: "Curitiba (Estagio presencial)",
-      period: "Mai 2025 - atualmente",
-      description:
-        "Desenvolvimento de interfaces front-end com React, TypeScript, Next.js e Tailwind CSS, com foco em UX/UI. Atuação em equipe com metodologias ágeis (SCRUM), gerenciamento de tarefas via Trello e integração com APIs REST. Utilização de Figma para criação de layouts responsivos e aprendizado de aplicações como o FileMaker, tecnologia adotada pela empresa antes de entrar para a equipe.",
+      period: "Mai 2025 - Jan 2026",
+      description: "Atendi a necessidades de uso em web e mobile com interfaces responsivas em React, Next.js, TypeScript e Tailwind CSS e aplicativos em React Native e Expo. Integrei lógica de negócio com FileMaker para apoiar a otimização de processos internos, colaborando em equipe ágil com Git, GitHub e GitFlow.",
     },
 
     bookwise: {
       title: "Book Wise - Dev full stack",
-      Subtitle_content: "Remoto - Freelancer",
+      subtitle_content: "Remoto - Freelancer",
       period: "Fev 2025 - Mar 2025",
       description:
         "Aplicação de reviews de livros com autenticação via Google e GitHub (NextAuth). Utilizei Prisma com banco de dados Neon e React Query para gerenciamento eficiente de dados.",
@@ -81,9 +91,8 @@ export const ptBR = {
     nau: {
       title: "Nau! Saas - Dev front end Jr",
       subtitle_content: "Remote – Freelancer",
-      period: "Jan 2024 - out 2024",
-      description:
-        "Desenvolvi e integrei interfaces de usuário para o projeto “Nau!”, com foco no desenvolvimento front-end para plataformas web e mobile, realizando um redesign e integração com o back end usando consumação de API RESTFUL. Colaborei com a equipe via Slack, metodologias ágeis como SCRUM e utilizei designs do Figma.",
+      period: "Jan 2024 - Jan 2025",
+      description: "Conectei interfaces web e mobile aos serviços de back-end por APIs REST, com React Native, Expo, Next.js e TypeScript. Redesenhei interfaces a partir do Figma e apliquei Tailwind CSS para atender diferentes telas; alinhei demandas com a equipe via Shortcut e Slack.",
     },
 
     Notary: {

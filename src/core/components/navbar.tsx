@@ -1,6 +1,5 @@
 import Icon from "@/core/assets/instaicon.png";
 import {
-  Binoculars,
   Certificate,
   House,
   Laptop,
@@ -15,6 +14,7 @@ import { langList } from "@/lib/translate/langList";
 import {
   DropdownMenu,
   DropdownMenuContent,
+  DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import i18n from "@/lib/translate/i18n";
@@ -74,10 +74,10 @@ export function Navbar() {
           <DropdownMenuContent align="end" className="p-2 ">
             <Column className="gap-3">
               {langList.map((lang, i) => (
-                <div key={i} className="flex cursor-pointer items-center" onClick={() => handleChangeLanguage(lang.key)}>
+                <DropdownMenuItem key={lang.key} className="flex cursor-pointer items-center" onSelect={() => handleChangeLanguage(lang.key)}>
                   <div className="w-[20px] h-[15px] mr-2">{lang.icon}</div>
                   {lang.title}
-                </div>
+                </DropdownMenuItem>
               ))}
             </Column>
           </DropdownMenuContent>
@@ -107,10 +107,5 @@ export const navbarTopics = [
     icon: <Certificate />,
     label: "certifications",
     targetId: "certificacoes",
-  },
-  {
-    icon: <Binoculars />,
-    label: "projects",
-    targetId: "projetos",
   },
 ];

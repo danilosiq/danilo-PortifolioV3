@@ -1,5 +1,5 @@
 import { ArrowRight } from "@phosphor-icons/react";
-import { Column, Row } from "../components/layout";
+import { Column } from "../components/layout";
 import Image from "next/image";
 import CartorioImg from "@/core/assets/cartorio.jpg";
 import IboltImg from "@/core/assets/ibolt.jpg";
@@ -11,12 +11,17 @@ export function ExperienceSection() {
     <Column className="sm:max-w-[1090px]  w-full">
       <p className="sm:text-5xl max-sm:text-4xl font-bold pb-4">{t(`experience.title`)}</p>
 
-      {experienceList.map((data, i) => (
+      {experienceList.map((data) => (
         <div
-          key={i}
+          key={data.key}
           className="min-h-[150px] h-full flex max-md:flex-col border-b border-slate-400 w-full gap-4 mb-4 pb-4 "
         >
           <div className="w-full md:w-[500px]  h-full relative">
+            {!data.image && !data.video && (
+              <div className="flex h-[260px] w-full items-center justify-center rounded-sm border border-slate-300 bg-amber-50">
+                <span className="text-5xl font-bold tracking-tight">Exban</span>
+              </div>
+            )}
             {data.video && (
               <video
                 src={data.video}
@@ -69,6 +74,9 @@ export function ExperienceSection() {
 }
 
 const experienceList = [
+  {
+    key: "exban",
+  },
   {
     key: "ibolt",
     image: IboltImg,

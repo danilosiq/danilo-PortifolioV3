@@ -1,8 +1,13 @@
-import { Certificate, Paragraph } from "@phosphor-icons/react";
-import { Description } from "@radix-ui/react-dialog";
-import { title } from "process";
-
 export const en = {
+  ui: { close: "Close", previous: "Previous", next: "Next", openMenu: "Open menu" },
+  resume: {
+    open: "View resume",
+    selectLanguage: "Select a language",
+    close: "Close",
+    description: "Choose one of the three cards to open the PDF resume in a new tab.",
+    viewPdf: "View PDF",
+    newTab: "new tab",
+  },
   //navbar
   navbar: {
     home: "Home",
@@ -14,7 +19,7 @@ export const en = {
   },
 
   bio:{
-    age:"20 years old",
+    age:"{{age}} years old",
     location:"Curitiba - PR, Brazil"
   },
 
@@ -38,8 +43,7 @@ export const en = {
 
   //career
   careerTitle: "My career",
-  careerContent:
-    "Front-End Developer with solid experience in creating responsive and intuitive web applications. Specialized in bridging front-end and back-end, with expertise in API consumption and collaboration with multidisciplinary teams. Skilled in agile methodologies, applying best practices in code structuring and software engineering principles.",
+  careerContent: "Full Stack Developer with experience building web and mobile applications using React, Next.js, React Native, TypeScript, and Node.js. Works on real-time communication, REST API integration, and automated testing. Contributes to messaging and in-app notification solutions through user flows, product thinking, and design in collaboration with technical teams.",
 
   //stacks
   stacksTitle: "Main Stacks",
@@ -49,7 +53,7 @@ export const en = {
     title: "Languages",
     english: {
       label: "English",
-      level: "Level B2 - Intermediate/Advanced",
+      level: "Level B1 - Intermediate",
     },
     portuguese: {
       label: "Portuguese BR",
@@ -64,12 +68,18 @@ export const en = {
     period: "Period:",
     button_text: "View Demo",
 
+    exban: {
+      title: "Exban - Junior Full Stack Developer",
+      subtitle_content: "Curitiba, Brazil - CLT employment",
+      period: "Feb 2026 - Present",
+      description: "Enabled real-time communication on the internal platform by developing chat features with React, TypeScript, Node.js, Prisma, and WebSocket. Contributed to the design of messaging and in-app notification solutions, defining user flows, product requirements, and Figma designs with the technical team. Implemented automated unit and E2E tests to verify application behavior and support reliable releases. Incorporated Codex and Spec-Driven Development to support AI-assisted delivery based on specifications. Collaborated with product and engineering through Jira, Scrum, and Kanban.",
+    },
+
     ibolt: {
       title: "iBolt - Front end Developer",
       subtitle_content: "Curitiba, Brazil (On-site Internship)",
-      period: "May 2025 - Present",
-      description:
-        "Front-end interface development with React, TypeScript, Next.js, and Tailwind CSS, focusing on UX/UI. Team collaboration using agile methodologies (SCRUM), task management via Trello, and integration with REST APIs. Proficient in using Figma to create responsive layouts, as well as learning to work with applications such as FileMaker—a technology adopted by the company prior to joining the team.",
+      period: "May 2025 - Jan 2026",
+      description: "Addressed web and mobile usage needs through responsive interfaces with React, Next.js, TypeScript, and Tailwind CSS and mobile applications with React Native and Expo. Integrated business logic with FileMaker to support internal process optimization, collaborating in an agile team using Git, GitHub, and GitFlow.",
     },
 
     bookwise: {
@@ -83,9 +93,8 @@ export const en = {
     nau: {
       title: "Nau! Saas - Front end Developer Jr",
       subtitle_content: "Remote – Freelancer",
-      period: "Jan 2024 - Oct 2024",
-      description:
-        "Developed and integrated user interfaces for the 'Nau!' project, focusing on front-end development for both web and mobile platforms. Conducted a redesign and integrated with the back end through RESTful API consumption. Collaborated with the team via Slack, applied agile methodologies such as SCRUM, and worked with designs provided in Figma.",
+      period: "Jan 2024 - Jan 2025",
+      description: "Connected web and mobile interfaces to back-end services through REST APIs using React Native, Expo, Next.js, and TypeScript. Redesigned interfaces from Figma and applied Tailwind CSS to support different screen sizes; coordinated tasks with the team through Shortcut and Slack.",
     },
 
     Notary: {

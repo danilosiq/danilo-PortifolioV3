@@ -83,7 +83,7 @@ export function CertificationsCarousel() {
                   img={data.image}
                   trigger={
                     <div className="gap-1 text-white py-2 rounded-b-md flex items-center justify-center hover:bg-blue-600 cursor-pointer bg-blue-500">
-                      <p>Ver detalhes</p>
+                      <p>{t("certifications.button_text")}</p>
                       <MagnifyingGlass size={25} />
                     </div>
                   }

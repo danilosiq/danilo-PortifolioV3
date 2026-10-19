@@ -1,17 +1,13 @@
 import {
-  DownloadSimple,
   InstagramLogo,
   LinkedinLogo,
-  ReadCvLogo,
   WhatsappLogo,
 } from "@phosphor-icons/react";
 import { GithubLogo } from "@phosphor-icons/react/dist/ssr";
-import { useRouter } from "next/navigation";
 import { Row } from "./layout";
-import ResumePDF from '@/core/assets/cv.pdf'
+import { ResumeLanguageModal } from "./resume-language-modal";
 
 export function SocialMediaRow() {
-  const router = useRouter();
   const topics = [
     {
       icon: <GithubLogo size={40} />,
@@ -34,15 +30,10 @@ export function SocialMediaRow() {
       url: "https://www.instagram.com/daniloosiq/",
       hoverStyle: "hover:bg-rose-500 hover:text-white",
     },
-     {
-      icon:<ReadCvLogo size={40}  className=""/>,
-      url:'/cv.pdf',
-      hoverStyle: "bg-slate-900 text-white hover:bg-teal-500",
-    },
   ];
 
   return (
-    <Row className="gap-6">
+    <Row className="gap-6 flex-wrap">
       {topics.map((topic, i) => (
         <a
           key={i}
@@ -54,7 +45,7 @@ export function SocialMediaRow() {
           {topic.icon}
         </a>
       ))}
-
+      <ResumeLanguageModal />
     </Row>
   );
 }

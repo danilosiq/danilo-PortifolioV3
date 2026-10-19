@@ -11,11 +11,33 @@ import { CareerSection } from "./sections/career-section";
 import { CertificationsSection } from "./sections/certifications-section";
 import { ExperienceSection } from "./sections/experience-section";
 import { MicroCertificationsSection } from "./sections/micro-certifications-section";
-import { ProjectsSession } from "./sections/projects-session";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
+import { langList } from "@/lib/translate/langList";
+import { calculateAge } from "@/lib/calculate-age";
+
+const birthDate = new Date(2004, 7, 25);
 
 export function HomePage() {
-   const { t } = useTranslation()
+   const { t, i18n } = useTranslation()
+   const [age, setAge] = useState<number | null>(null);
+
+   useEffect(() => {
+     let timeout: ReturnType<typeof setTimeout>;
+
+     function updateAge() {
+       const now = new Date();
+       setAge(calculateAge(birthDate, now));
+       const nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+       timeout = setTimeout(updateAge, nextMidnight.getTime() - now.getTime());
+     }
+
+     updateAge();
+     return () => clearTimeout(timeout);
+   }, []);
+   useEffect(() => {
+     document.documentElement.lang = langList.find((language) => language.key === i18n.resolvedLanguage)?.htmlLang ?? "pt-BR";
+   }, [i18n.resolvedLanguage]);
   return (
     <Column>
       <Navbar />
@@ -32,7 +54,7 @@ export function HomePage() {
           />
           <Column>
             <p className="text-6xl font-bold">Danilo Dante Siqueira</p>
-            <p>{t("bio.age")}</p>
+            <p>{age !== null ? t("bio.age", { age }) : "\u00a0"}</p>
             <p>{t("bio.location")}</p>
             <SocialMediaRow />
           </Column>
@@ -61,9 +83,6 @@ export function HomePage() {
           className="w-[200px] mx-auto h-[200px] "
         />
 
-        <section id="projetos">
-          <ProjectsSession />
-        </section>
       </Column>
     </Column>
   );

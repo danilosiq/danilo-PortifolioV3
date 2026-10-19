@@ -11,6 +11,7 @@ import { navbarTopics } from "./navbar";
 import {
   DropdownMenu,
   DropdownMenuContent,
+  DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Column } from "./layout";
@@ -49,9 +50,9 @@ export function Menu() {
   return (
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
-        <div className="sm:hidden z-50 rounded-full border p-2 bg-white fixed bottom-4 right-4">
+        <button type="button" aria-label={t("ui.openMenu")} className="sm:hidden z-50 rounded-full border p-2 bg-white fixed bottom-4 right-4">
           <MenuIcon size={30} />
-        </div>
+        </button>
       </DrawerTrigger>
       <DrawerContent className="pb-10">
         <DrawerTitle />
@@ -63,7 +64,7 @@ export function Menu() {
             onClick={() => scrollToSection(topic.targetId)}
           >
             {topic.icon}
-            <p>{topic.label}</p>
+            <p>{t(`navbar.${topic.label}`)}</p>
           </div>
         ))}
         <DropdownMenu
@@ -79,14 +80,14 @@ export function Menu() {
           <DropdownMenuContent align="center" className="p-2 ">
             <Column className="gap-3">
               {langList.map((lang, i) => (
-                <div
-                  key={i}
+                <DropdownMenuItem
+                  key={lang.key}
                   className="flex cursor-pointer items-center"
-                  onClick={() => handleChangeLanguage(lang.key)}
+                  onSelect={() => handleChangeLanguage(lang.key)}
                 >
                   <div className="w-[20px] h-[15px] mr-2">{lang.icon}</div>
                   {lang.title}
-                </div>
+                </DropdownMenuItem>
               ))}
             </Column>
           </DropdownMenuContent>
